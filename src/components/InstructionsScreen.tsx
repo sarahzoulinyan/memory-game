@@ -50,7 +50,7 @@ const InstructionsScreen: React.FC<InstructionsScreenProps> = ({ onBack }) => {
         </div>
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-3 md:mb-4">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 animate-shine">
-            COMO PLAY
+            HOW TO PLAY
           </span>
         </h1>
         <p className="text-base sm:text-lg md:text-xl text-gray-300 font-light tracking-wider animate-pulse">
