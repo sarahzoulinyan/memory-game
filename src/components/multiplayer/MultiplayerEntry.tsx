@@ -55,7 +55,7 @@ const MultiplayerEntry: React.FC<MultiplayerEntryProps> = ({
         className="absolute top-4 left-4 md:top-6 md:left-6 flex items-center space-x-1 text-sm text-gray-300 hover:text-white transition-colors z-10"
       >
         <ArrowLeft className="w-4 h-4" />
-        <span>Voltar</span>
+        <span>Back</span>
       </button>
 
       {/* Main Content */}
@@ -65,20 +65,20 @@ const MultiplayerEntry: React.FC<MultiplayerEntryProps> = ({
           <div className="flex items-center justify-center gap-3 mb-4">
             <Users className="w-8 h-8 text-purple-400" />
             <h1 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-              Modo Multiplayer
+              Multiplayer Mode
             </h1>
           </div>
           <p className="text-gray-300 text-sm sm:text-base tracking-wider">
-            Jogue Neon Memory com seus amigos online!
+            Play Neon Memory with your friends online!
           </p>
         </div>
 
         {/* Card */}
         <div className="bg-gray-800/80 backdrop-blur-sm rounded-xl border border-purple-500/30 p-6 shadow-lg shadow-purple-500/10">
           <div className="text-center mb-6">
-            <h2 className="text-xl font-semibold text-white mb-1">Digite seu nome</h2>
+            <h2 className="text-xl font-semibold text-white mb-1">Enter your name</h2>
             <p className="text-sm text-gray-400">
-              Como você gostaria de ser chamado no jogo?
+              What would you like to be called in the game?
             </p>
           </div>
           
@@ -86,7 +86,7 @@ const MultiplayerEntry: React.FC<MultiplayerEntryProps> = ({
           <div className="mb-6">
             <input
               type="text"
-              placeholder="Seu nome de jogador"
+              placeholder="Your player name"
               value={playerName}
               onChange={(e) => setPlayerName(e.target.value)}
               className="w-full px-4 py-3 bg-gray-700/80 border border-gray-600/50 rounded-lg text-white placeholder-gray-400 text-center focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-transparent transition-all"
@@ -111,7 +111,7 @@ const MultiplayerEntry: React.FC<MultiplayerEntryProps> = ({
               }`}
             >
               <Plus className="w-5 h-5" />
-              <span>Criar Nova Sala</span>
+              <span>Create New Room</span>
             </button>
 
             <button
@@ -124,7 +124,7 @@ const MultiplayerEntry: React.FC<MultiplayerEntryProps> = ({
               }`}
             >
               <Play className="w-5 h-5" />
-              <span>Entrar em Sala</span>
+              <span>Join a Room</span>
             </button>
           </div>
         </div>
@@ -132,7 +132,7 @@ const MultiplayerEntry: React.FC<MultiplayerEntryProps> = ({
         {/* Footer Note */}
         <div className="text-center">
           <p className="text-xs text-gray-500 tracking-wider">
-            🎮 Desafie seus amigos em tempo real!
+            🎮 Challenge your friends in real time!
           </p>
         </div>
       </div>

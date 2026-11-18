@@ -11,12 +11,12 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onLoadingComplete }) => {
   const [currentStep, setCurrentStep] = useState(0);
 
   const loadingSteps = [
-    { progress: 15, text: 'Inicializando sistemas...', icon: Zap },
-    { progress: 35, text: 'Carregando recursos...', icon: Cpu },
-    { progress: 55, text: 'Preparando interface...', icon: Sparkles },
-    { progress: 75, text: 'Configurando jogo...', icon: Brain },
-    { progress: 90, text: 'Finalizando...', icon: Gamepad2 },
-    { progress: 100, text: 'Pronto para jogar!', icon: Rocket }
+    { progress: 15, text: 'Initializing systems...', icon: Zap },
+    { progress: 35, text: 'Loading resources...', icon: Cpu },
+    { progress: 55, text: 'Preparing interface...', icon: Sparkles },
+    { progress: 75, text: 'Setting up the game...', icon: Brain },
+    { progress: 90, text: 'Finishing up...', icon: Gamepad2 },
+    { progress: 100, text: 'Ready to play!', icon: Rocket }
   ];
 
   useEffect(() => {
@@ -92,7 +92,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onLoadingComplete }) => {
             
             {/* Subtitle */}
             <p className="text-base sm:text-lg md:text-xl text-slate-300 font-light opacity-80">
-              Prepare-se para o desafio
+              Get ready for the challenge
             </p>
           </div>
         </div>
@@ -128,7 +128,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onLoadingComplete }) => {
           {/* Loading Text */}
           <div className="text-center min-h-[2rem] sm:min-h-[2.5rem]">
             <p className="text-base sm:text-lg text-slate-300 font-medium animate-pulse">
-              {loadingSteps[currentStep]?.text || 'Carregando...'}
+              {loadingSteps[currentStep]?.text || 'Loading...'}
             </p>
           </div>
 

@@ -39,7 +39,7 @@ const InstructionsScreen: React.FC<InstructionsScreenProps> = ({ onBack }) => {
           <div className="p-2 rounded-full bg-gray-800/80 backdrop-blur-sm border border-gray-700 group-hover:border-purple-500/50 transition-colors">
             <ArrowLeft className="w-5 h-5 sm:w-6 sm:h-6 group-hover:scale-110 transition-transform" />
           </div>
-          <span className="text-sm sm:text-base font-medium tracking-wider">VOLTAR</span>
+          <span className="text-sm sm:text-base font-medium tracking-wider">BACK</span>
         </button>
       </div>
 
@@ -50,11 +50,11 @@ const InstructionsScreen: React.FC<InstructionsScreenProps> = ({ onBack }) => {
         </div>
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-3 md:mb-4">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 animate-shine">
-            COMO JOGAR
+            COMO PLAY
           </span>
         </h1>
         <p className="text-base sm:text-lg md:text-xl text-gray-300 font-light tracking-wider animate-pulse">
-          Domine o Neon Memory em 4 passos!
+          Master Neon Memory in 4 steps!
         </p>
       </div>
 
@@ -72,11 +72,11 @@ const InstructionsScreen: React.FC<InstructionsScreenProps> = ({ onBack }) => {
               <div>
                 <div className="flex items-center mb-2">
                   <span className="text-2xl font-bold text-blue-400 mr-3">1.</span>
-                  <h3 className="text-xl font-bold text-white">Observe a Sequência</h3>
+                  <h3 className="text-xl font-bold text-white">Watch the Sequence</h3>
                 </div>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  O jogo mostrará uma sequência de cores que piscam na tela. 
-                  Preste atenção e memorize a ordem das cores com cuidado!
+                  The game will show a sequence of flashing colors. 
+                  Pay attention and carefully memorize the color order!
                 </p>
               </div>
             </div>
@@ -95,11 +95,11 @@ const InstructionsScreen: React.FC<InstructionsScreenProps> = ({ onBack }) => {
               <div>
                 <div className="flex items-center mb-2">
                   <span className="text-2xl font-bold text-purple-400 mr-3">2.</span>
-                  <h3 className="text-xl font-bold text-white">Repita a Sequência</h3>
+                  <h3 className="text-xl font-bold text-white">Repeat the Sequence</h3>
                 </div>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Depois que a sequência terminar, clique nos botões coloridos 
-                  na mesma ordem que foi mostrada. Seja preciso!
+                  After the sequence ends, click the colored buttons 
+                  in the same order shown. Be precise!
                 </p>
               </div>
             </div>
@@ -118,11 +118,11 @@ const InstructionsScreen: React.FC<InstructionsScreenProps> = ({ onBack }) => {
               <div>
                 <div className="flex items-center mb-2">
                   <span className="text-2xl font-bold text-pink-400 mr-3">3.</span>
-                  <h3 className="text-xl font-bold text-white">Avance os Níveis</h3>
+                  <h3 className="text-xl font-bold text-white">Advance Through the Levels</h3>
                 </div>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  A cada acerto, uma nova cor é adicionada à sequência, 
-                  tornando o jogo mais desafiador. Teste seus limites!
+                  Each correct round adds a new color to the sequence, 
+                  making the game more challenging. Test your limits!
                 </p>
               </div>
             </div>
@@ -141,11 +141,11 @@ const InstructionsScreen: React.FC<InstructionsScreenProps> = ({ onBack }) => {
               <div>
                 <div className="flex items-center mb-2">
                   <span className="text-2xl font-bold text-green-400 mr-3">4.</span>
-                  <h3 className="text-xl font-bold text-white">Acerte ou Game Over</h3>
+                  <h3 className="text-xl font-bold text-white">Get It Right or Game Over</h3>
                 </div>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Se errar a sequência, é game over! Mas não desanime, 
-                  cada partida é uma chance de bater seu recorde.
+                  If you miss the sequence, it is game over! Do not give up— 
+                  every game is a chance to beat your high score.
                 </p>
               </div>
             </div>
@@ -157,7 +157,7 @@ const InstructionsScreen: React.FC<InstructionsScreenProps> = ({ onBack }) => {
       <div className="mt-12 w-full max-w-4xl relative z-10 px-4">
         <h3 className="text-3xl font-bold text-white mb-8 text-center">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
-            MODOS DE JOGO
+            GAME MODES
           </span>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -171,11 +171,11 @@ const InstructionsScreen: React.FC<InstructionsScreenProps> = ({ onBack }) => {
                   <Brain className="w-8 h-8 text-white" />
                 </div>
                 <h4 className="text-xl font-bold text-white mb-2">Normal</h4>
-                <p className="text-gray-300 text-sm mb-3">Ideal para iniciantes</p>
+                <p className="text-gray-300 text-sm mb-3">Ideal for beginners</p>
                 <div className="text-xs text-blue-300 space-y-1">
-                  <div>✓ 4 cores diferentes</div>
-                  <div>✓ Tempo constante</div>
-                  <div>✓ Pontuação base</div>
+                  <div>✓ 4 different colors</div>
+                  <div>✓ Steady timing</div>
+                  <div>✓ Base score</div>
                 </div>
               </div>
             </div>
@@ -190,12 +190,12 @@ const InstructionsScreen: React.FC<InstructionsScreenProps> = ({ onBack }) => {
                 <div className="w-16 h-16 rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 flex items-center justify-center mb-4">
                   <Zap className="w-8 h-8 text-white animate-pulse" />
                 </div>
-                <h4 className="text-xl font-bold text-white mb-2">Velocidade</h4>
-                <p className="text-gray-300 text-sm mb-3">Para os destemidos</p>
+                <h4 className="text-xl font-bold text-white mb-2">Speed</h4>
+                <p className="text-gray-300 text-sm mb-3">For the fearless</p>
                 <div className="text-xs text-yellow-300 space-y-1">
-                  <div>✓ 4 cores</div>
-                  <div>✓ Velocidade crescente</div>
-                  <div>✓ Pontuação 2x</div>
+                  <div>✓ 4 colors</div>
+                  <div>✓ Increasing speed</div>
+                  <div>✓ 2x score</div>
                 </div>
               </div>
             </div>
@@ -210,12 +210,12 @@ const InstructionsScreen: React.FC<InstructionsScreenProps> = ({ onBack }) => {
                 <div className="w-16 h-16 rounded-full bg-gradient-to-r from-red-500 to-pink-600 flex items-center justify-center mb-4">
                   <Skull className="w-8 h-8 text-white" />
                 </div>
-                <h4 className="text-xl font-bold text-white mb-2">Difícil</h4>
-                <p className="text-gray-300 text-sm mb-3">Apenas para mestres</p>
+                <h4 className="text-xl font-bold text-white mb-2">Hard</h4>
+                <p className="text-gray-300 text-sm mb-3">For masters only</p>
                 <div className="text-xs text-red-300 space-y-1">
-                  <div>✓ 6 cores diferentes</div>
-                  <div>✓ Velocidade extrema</div>
-                  <div>✓ Pontuação 2.5x</div>
+                  <div>✓ 6 different colors</div>
+                  <div>✓ Speed extrema</div>
+                  <div>✓ 2.5x score</div>
                 </div>
               </div>
             </div>
@@ -231,36 +231,36 @@ const InstructionsScreen: React.FC<InstructionsScreenProps> = ({ onBack }) => {
           <div className="relative bg-gray-900/90 backdrop-blur-sm border border-cyan-500/30 rounded-xl p-6 transition-all duration-300 group-hover:border-cyan-500/50">
             <h3 className="text-2xl font-bold text-white mb-6 text-center">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">
-                DICAS DE SUCESSO
+                SUCCESS TIPS
               </span>
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-                  <span className="text-gray-300 text-sm">Concentre-se na sequência</span>
+                  <span className="text-gray-300 text-sm">Focus on the sequence</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 rounded-full bg-purple-500"></div>
-                  <span className="text-gray-300 text-sm">Use os sons como guia</span>
+                  <span className="text-gray-300 text-sm">Use the sounds as a guide</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 rounded-full bg-pink-500"></div>
-                  <span className="text-gray-300 text-sm">Comece devagar</span>
+                  <span className="text-gray-300 text-sm">Start slowly</span>
                 </div>
               </div>
               <div className="space-y-2">
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 rounded-full bg-green-500"></div>
-                  <span className="text-gray-300 text-sm">Mantenha a calma</span>
+                  <span className="text-gray-300 text-sm">Stay calm</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
-                  <span className="text-gray-300 text-sm">Confie nos reflexos</span>
+                  <span className="text-gray-300 text-sm">Trust your reflexes</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 rounded-full bg-red-500"></div>
-                  <span className="text-gray-300 text-sm">Memorize por posições</span>
+                  <span className="text-gray-300 text-sm">Memorize by position</span>
                 </div>
               </div>
             </div>
@@ -271,7 +271,7 @@ const InstructionsScreen: React.FC<InstructionsScreenProps> = ({ onBack }) => {
       {/* Footer */}
       <div className="mt-12 text-center relative z-10">
         <p className="text-xs text-gray-500 tracking-widest">
-          BOA SORTE E DIVIRTA-SE! 🎮
+          GOOD LUCK AND HAVE FUN! 🎮
         </p>
       </div>
 

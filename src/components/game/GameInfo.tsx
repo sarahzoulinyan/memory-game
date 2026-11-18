@@ -23,7 +23,7 @@ const GameInfo: React.FC<GameInfoProps> = ({
       <div className="flex justify-center items-center gap-6 sm:gap-12">
         {/* Pontos */}
         <div className="text-center">
-          <p className="text-neon-blue text-xs sm:text-sm">PONTOS</p>
+          <p className="text-neon-blue text-xs sm:text-sm">SCORE</p>
           <p className="text-lg sm:text-2xl font-bold text-white">{score}</p>
           {gameMode !== 'normal' && (
             <p className={`text-xs ${modeInfo.color}`}>
@@ -34,13 +34,13 @@ const GameInfo: React.FC<GameInfoProps> = ({
 
         {/* Nível */}
         <div className="text-center">
-          <p className="text-neon-purple text-xs sm:text-sm">NÍVEL</p>
+          <p className="text-neon-purple text-xs sm:text-sm">LEVEL</p>
           <p className="text-lg sm:text-2xl font-bold text-white">{level}</p>
         </div>
 
-        {/* Recorde */}
+        {/* High Score */}
         <div className="text-center">
-          <p className="text-neon-orange text-xs sm:text-sm">RECORDE</p>
+          <p className="text-neon-orange text-xs sm:text-sm">HIGH SCORE</p>
           <div className="flex items-center justify-center gap-1">
             <Award className="w-4 h-4 sm:w-5 sm:h-5 text-neon-orange" />
             <p className="text-base sm:text-xl font-bold text-white">{highScore}</p>

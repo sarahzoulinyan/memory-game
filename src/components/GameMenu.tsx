@@ -67,7 +67,7 @@ const GameMenu: React.FC<GameMenuProps> = ({
           </span>
         </h1>
         <p className="text-base sm:text-lg md:text-xl text-gray-300 font-light tracking-wider animate-pulse">
-          Teste sua memória no futuro!
+          Test your memory in the future!
         </p>
       </div>
 
@@ -77,7 +77,7 @@ const GameMenu: React.FC<GameMenuProps> = ({
           <div className="flex items-center justify-center space-x-2 bg-gray-800/80 backdrop-blur-sm rounded-full px-6 py-2 md:px-8 md:py-3 border border-purple-500/30 shadow-lg shadow-purple-500/10">
             <Award className="w-4 h-4 md:w-5 md:h-5 text-purple-400" />
             <span className="text-sm md:text-base text-white font-medium tracking-wider">
-              Recorde: <span className="text-purple-300 font-bold">{highScore}</span>
+              High Score: <span className="text-purple-300 font-bold">{highScore}</span>
             </span>
           </div>
         </div>
@@ -103,7 +103,7 @@ const GameMenu: React.FC<GameMenuProps> = ({
           }}
         >
           <Play className="w-5 h-5 md:w-6 md:h-6 z-10" />
-          <span className="z-10 tracking-wider">JOGAR</span>
+          <span className="z-10 tracking-wider">PLAY</span>
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
         </button>
 
@@ -147,7 +147,7 @@ const GameMenu: React.FC<GameMenuProps> = ({
           }}
         >
           <HelpCircle className="w-5 h-5 md:w-6 md:h-6 z-10" />
-          <span className="z-10 tracking-wider">COMO JOGAR</span>
+          <span className="z-10 tracking-wider">COMO PLAY</span>
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
         </button>
 
@@ -165,7 +165,7 @@ const GameMenu: React.FC<GameMenuProps> = ({
           }}
         >
           <Settings className="w-5 h-5 md:w-6 md:h-6 z-10 text-gray-300" />
-          <span className="z-10 tracking-wider text-gray-200">CONFIGURAÇÕES</span>
+          <span className="z-10 tracking-wider text-gray-200">SETTINGS</span>
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
         </button>
 
@@ -187,7 +187,7 @@ const GameMenu: React.FC<GameMenuProps> = ({
           }}
         >
           <Award className="w-5 h-5 md:w-6 md:h-6 z-10" />
-          <span className="z-10 tracking-wider">CRÉDITOS</span>
+          <span className="z-10 tracking-wider">CREDITS</span>
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
         </button>
       </div>
@@ -198,14 +198,14 @@ const GameMenu: React.FC<GameMenuProps> = ({
           <Volume2 className={`w-4 h-4 ${soundEnabled ? 'text-green-400' : 'text-gray-400'}`} />
         </div>
         <span className="text-xs md:text-sm text-gray-300 tracking-wider">
-          Som {soundEnabled ? 'ligado' : 'desligado'}
+          Sound {soundEnabled ? 'on' : 'off'}
         </span>
       </div>
 
       {/* Footer text */}
       <div className="mt-8 text-center relative z-10">
         <p className="text-xs text-gray-500 tracking-widest">
-          ••• PRESSIONE QUALQUER BOTÃO PARA COMEÇAR •••
+          ••• PRESS ANY BUTTON TO START •••
         </p>
       </div>
 

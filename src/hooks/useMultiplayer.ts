@@ -32,7 +32,7 @@ export const useMultiplayer = () => {
       if (error) throw error;
       setAvailableRooms((data || []) as GameRoom[]);
     } catch (error) {
-      console.error('Erro ao carregar salas:', error);
+      console.error('Error loading rooms:', error);
     }
   }, []);
 
@@ -101,14 +101,14 @@ export const useMultiplayer = () => {
 
       return verifiedRoom;
     } catch (error) {
-      console.error('Erro ao criar sala:', error);
+      console.error('Could not create room:', error);
       throw error;
     } finally {
       setLoading(false);
     }
   }, []);
 
-  // Entrar em sala - CORREÇÃO DO BUG DA PRIMEIRA VEZ
+  // Join em sala - CORREÇÃO DO BUG DA PRIMEIRA VEZ
   const joinRoom = useCallback(async (roomId: string, playerName: string) => {
     setLoading(true);
     try {
@@ -133,10 +133,10 @@ export const useMultiplayer = () => {
       }
       
       if (!existingRoom) {
-        throw new Error('Sala não encontrada ou já em jogo');
+        throw new Error('Room not found or already in progress');
       }
 
-      // 2. Entrar na sala
+      // 2. Join na sala
       const { data, error } = await supabase
         .from('game_rooms')
         .update({ 
@@ -165,7 +165,7 @@ export const useMultiplayer = () => {
 
       return data;
     } catch (error) {
-      console.error('Erro ao entrar na sala:', error);
+      console.error('Could not join room:', error);
       throw error;
     } finally {
       setLoading(false);
@@ -215,7 +215,7 @@ export const useMultiplayer = () => {
 
       if (error) throw error;
     } catch (error) {
-      console.error('Erro ao adicionar cor à sequência:', error);
+      console.error('Error adding color to sequence:', error);
     }
   }, [gameState.room, gameState.isMyTurn, gameState.isPlayer1]);
 
@@ -242,7 +242,7 @@ export const useMultiplayer = () => {
         winner,
       }));
     } catch (error) {
-      console.error('Erro ao finalizar jogo:', error);
+      console.error('Error ending game:', error);
     }
   }, [gameState.room, gameState.playerName, gameState.isPlayer1]);
 
@@ -295,7 +295,7 @@ export const useMultiplayer = () => {
         )
         .subscribe((status) => {
           if (status === 'SUBSCRIBED') {
-            console.log('✅ Conexão Realtime estabelecida');
+            console.log('✅ Realtime connection established');
           } else if (status === 'CHANNEL_ERROR' && retryCount < maxRetries) {
             retryCount++;
             console.log(`🔄 Tentando reconectar... (${retryCount}/${maxRetries})`);
@@ -322,7 +322,7 @@ export const useMultiplayer = () => {
     return () => clearInterval(interval);
   }, [loadAvailableRooms]);
 
-  // Resetar estado do multiplayer
+  // Reset estado do multiplayer
   const resetGameState = useCallback(() => {
     setGameState({
       room: null,

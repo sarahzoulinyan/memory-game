@@ -16,9 +16,9 @@ export const getRandomColor = (gameMode: GameMode): Color => {
 export const getGameModeInfo = (gameMode: GameMode) => {
   switch (gameMode) {
     case 'speed':
-      return { icon: Zap, name: 'VELOCIDADE', color: 'text-neon-orange' };
+      return { icon: Zap, name: 'SPEED', color: 'text-neon-orange' };
     case 'hard':
-      return { icon: Skull, name: 'DIFÍCIL', color: 'text-red-400' };
+      return { icon: Skull, name: 'HARD', color: 'text-red-400' };
     default:
       return { icon: Brain, name: 'NORMAL', color: 'text-neon-blue' };
   }

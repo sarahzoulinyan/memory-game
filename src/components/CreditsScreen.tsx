@@ -70,7 +70,7 @@ const CreditsScreen: React.FC<CreditsScreenProps> = ({ onBack }) => {
           <div className="p-2 rounded-full bg-gray-800/80 backdrop-blur-sm border border-gray-700 group-hover:border-purple-500/50 transition-colors">
             <ArrowLeft className="w-5 h-5 sm:w-6 sm:h-6 group-hover:scale-110 transition-transform" />
           </div>
-          <span className="text-sm sm:text-base font-medium tracking-wider">VOLTAR</span>
+          <span className="text-sm sm:text-base font-medium tracking-wider">BACK</span>
         </button>
       </div>
 
@@ -81,11 +81,11 @@ const CreditsScreen: React.FC<CreditsScreenProps> = ({ onBack }) => {
         </div>
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-3 md:mb-4">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 animate-shine">
-            CRÉDITOS
+            CREDITS
           </span>
         </h1>
         <p className="text-base sm:text-lg md:text-xl text-gray-300 font-light tracking-wider animate-pulse">
-          Desenvolvido com paixão e tecnologia
+          Built with passion and technology
         </p>
       </div>
 
@@ -100,11 +100,11 @@ const CreditsScreen: React.FC<CreditsScreenProps> = ({ onBack }) => {
               <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 flex items-center justify-center">
                 <Gamepad2 className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-white">Sobre o Jogo</h3>
+              <h3 className="text-xl font-bold text-white">About the Game</h3>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Neon Memory é um jogo de memória futurista que desafia suas habilidades cognitivas 
-              com cores vibrantes, efeitos visuais impressionantes e diferentes modos de jogo.
+              Neon Memory is a futuristic memory game that challenges your cognitive skills 
+              with vibrant colors, striking visual effects and different game modes.
             </p>
           </div>
         </div>
@@ -122,7 +122,7 @@ const CreditsScreen: React.FC<CreditsScreenProps> = ({ onBack }) => {
             </div>
             <p className="text-gray-300 text-sm mb-4 leading-relaxed">
               Criado por <span className="text-purple-300 font-semibold">Pablo Gomes</span>. 
-              Um projeto desenvolvido com paixão por jogos e tecnologia.
+              A project built with a passion for games and technology.
             </p>
             
             {/* Social Links Grid */}
@@ -186,7 +186,7 @@ const CreditsScreen: React.FC<CreditsScreenProps> = ({ onBack }) => {
             </div>
             <ul className="space-y-2">
               {[
-                '3 modos de jogo diferentes',
+                '3 different game modes',
                 'Sistema de recordes',
                 'Design responsivo',
                 'Efeitos visuais neon',
@@ -212,10 +212,10 @@ const CreditsScreen: React.FC<CreditsScreenProps> = ({ onBack }) => {
               <div className="mb-4">
                 <Heart className="w-12 h-12 text-pink-400" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-3">Obrigado por jogar!</h3>
+              <h3 className="text-2xl font-bold text-white mb-3">Thanks for playing!</h3>
               <p className="text-gray-300 leading-relaxed">
-                Cada partida é uma nova aventura. Esperamos que você tenha se divertido 
-                tanto quanto nós nos divertimos criando essa experiência.
+                Every game is a new adventure. We hope you had as much fun playing 
+                as we had creating this experience.
               </p>
             </div>
           </div>
@@ -226,7 +226,7 @@ const CreditsScreen: React.FC<CreditsScreenProps> = ({ onBack }) => {
       <div className="mt-8 text-center relative z-10">
         <div className="flex items-center justify-center space-x-2 text-gray-500 mb-2">
           <Coffee className="w-4 h-4 text-amber-600" />
-          <span className="text-sm">Feito com paixão e café</span>
+          <span className="text-sm">Made with passion and coffee</span>
         </div>
         <p className="text-xs text-gray-500 tracking-widest">
           © {new Date().getFullYear()} NEON MEMORY • v1.0

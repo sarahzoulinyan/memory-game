@@ -16,8 +16,8 @@ export default defineConfig(({ mode }) => ({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'icon-192.png', 'icon-512.png'],
       manifest: {
-        name: 'Jogo da Memória',
-        short_name: 'Memória',
+        name: 'Memory Game',
+        short_name: 'Memory',
         start_url: '/',
         display: 'standalone',
         background_color: '#ffffff',

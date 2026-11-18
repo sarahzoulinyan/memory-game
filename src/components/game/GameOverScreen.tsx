@@ -23,7 +23,7 @@ const GameOverScreen: React.FC<GameOverScreenProps> = ({
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 p-6">
       {/* Game Over Title */}
-      <h1 className="text-4xl font-bold text-red-500 mb-8">FIM DO JOGO</h1>
+      <h1 className="text-4xl font-bold text-red-500 mb-8">GAME OVER</h1>
 
       {/* Stats Card */}
       <div className="bg-gray-800 rounded-xl p-6 mb-8 w-full max-w-md">
@@ -31,7 +31,7 @@ const GameOverScreen: React.FC<GameOverScreenProps> = ({
         <div className="text-center mb-6">
           <div className="flex items-center justify-center gap-2 mb-2">
             <Trophy className="w-5 h-5 text-yellow-400" />
-            <span className="text-gray-300">PONTUAÇÃO FINAL</span>
+            <span className="text-gray-300">FINAL SCORE</span>
           </div>
           <p className="text-4xl font-bold text-yellow-400">{score.toLocaleString()}</p>
         </div>
@@ -40,7 +40,7 @@ const GameOverScreen: React.FC<GameOverScreenProps> = ({
         <div className="text-center mb-6">
           <div className="flex items-center justify-center gap-2 mb-2">
             <Target className="w-5 h-5 text-blue-400" />
-            <span className="text-gray-300">NÍVEL ALCANÇADO</span>
+            <span className="text-gray-300">LEVEL REACHED</span>
           </div>
           <p className="text-3xl font-bold text-blue-400">{level}</p>
         </div>
@@ -49,7 +49,7 @@ const GameOverScreen: React.FC<GameOverScreenProps> = ({
         <div className="text-center">
           <div className="flex items-center justify-center gap-2 mb-2">
             <Zap className="w-5 h-5 text-purple-400" />
-            <span className="text-gray-300">MODO DE JOGO</span>
+            <span className="text-gray-300">GAME MODE</span>
           </div>
           <div className={`text-sm font-medium px-4 py-2 rounded-full ${modeInfo.color} bg-opacity-20`}>
             {modeInfo.name.toUpperCase()} ({gameMode === 'hard' ? '2.5x' : gameMode === 'speed' ? '2x' : '1x'})
@@ -65,7 +65,7 @@ const GameOverScreen: React.FC<GameOverScreenProps> = ({
           bg-purple-600 hover:bg-purple-700 transition-colors"
         >
           <RotateCcw className="w-5 h-5" />
-          JOGAR DE NOVO
+          PLAY DE NOVO
         </button>
 
         <button
@@ -74,7 +74,7 @@ const GameOverScreen: React.FC<GameOverScreenProps> = ({
           bg-gray-700 hover:bg-gray-600 transition-colors"
         >
           <Home className="w-5 h-5" />
-          MENU PRINCIPAL
+          MAIN MENU
         </button>
       </div>
     </div>

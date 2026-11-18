@@ -49,10 +49,10 @@ const GameModeSelect: React.FC<GameModeSelectProps> = ({ onBack, onSelectMode })
           </div>
           <div className="flex flex-col items-start">
             <span className="text-xs text-gray-400 font-medium tracking-widest uppercase opacity-70 group-hover:opacity-100 transition-opacity">
-              Voltar para
+              Back to
             </span>
             <span className="text-sm sm:text-base font-semibold tracking-wider bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent group-hover:from-purple-200 group-hover:to-pink-200 transition-all">
-              MENU PRINCIPAL
+              MAIN MENU
             </span>
           </div>
         </button>
@@ -62,11 +62,11 @@ const GameModeSelect: React.FC<GameModeSelectProps> = ({ onBack, onSelectMode })
       <div className="text-center mb-8 md:mb-12 relative z-10">
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-3 md:mb-4">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 animate-shine">
-            ESCOLHA SEU MODO
+            CHOOSE YOUR MODE
           </span>
         </h1>
         <p className="text-base sm:text-lg md:text-xl text-gray-300 font-light tracking-wider animate-pulse">
-          Desafie sua memória de diferentes formas!
+          Challenge your memory in different ways!
         </p>
       </div>
 
@@ -106,22 +106,22 @@ const GameModeSelect: React.FC<GameModeSelectProps> = ({ onBack, onSelectMode })
             
             {/* Description */}
             <p className="text-gray-300 mb-6 text-center leading-relaxed">
-              Perfeito para começar! Aprenda no seu ritmo com 4 cores e tempo constante.
+              Perfect for beginners! Learn at your own pace with 4 colors and steady timing.
             </p>
             
             {/* Features */}
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-3 text-blue-300">
                 <div className="w-2 h-2 bg-blue-300 rounded-full"></div>
-                <span>4 cores diferentes</span>
+                <span>4 different colors</span>
               </div>
               <div className="flex items-center space-x-3 text-blue-300">
                 <div className="w-2 h-2 bg-blue-300 rounded-full"></div>
-                <span>Tempo constante</span>
+                <span>Steady timing</span>
               </div>
               <div className="flex items-center space-x-3 text-blue-300">
                 <div className="w-2 h-2 bg-blue-300 rounded-full"></div>
-                <span>Ideal para iniciantes</span>
+                <span>Ideal for beginners</span>
               </div>
             </div>
           </div>
@@ -156,27 +156,27 @@ const GameModeSelect: React.FC<GameModeSelectProps> = ({ onBack, onSelectMode })
             
             {/* Title */}
             <h3 className="text-3xl font-bold text-white mb-4 text-center group-hover:text-yellow-300 transition-colors">
-              VELOCIDADE
+              SPEED
             </h3>
             
             {/* Description */}
             <p className="text-gray-300 mb-6 text-center leading-relaxed">
-              Para os corajosos! Sequências cada vez mais rápidas que testam seus reflexos.
+              For the fearless! Increasingly fast sequences that test your reflexes.
             </p>
             
             {/* Features */}
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-3 text-yellow-300">
                 <div className="w-2 h-2 bg-yellow-300 rounded-full animate-pulse"></div>
-                <span>4 cores</span>
+                <span>4 colors</span>
               </div>
               <div className="flex items-center space-x-3 text-yellow-300">
                 <div className="w-2 h-2 bg-yellow-300 rounded-full animate-pulse"></div>
-                <span>Velocidade crescente</span>
+                <span>Increasing speed</span>
               </div>
               <div className="flex items-center space-x-3 text-yellow-300">
                 <div className="w-2 h-2 bg-yellow-300 rounded-full animate-pulse"></div>
-                <span>Pontuação 2x</span>
+                <span>2x score</span>
               </div>
             </div>
           </div>
@@ -211,27 +211,27 @@ const GameModeSelect: React.FC<GameModeSelectProps> = ({ onBack, onSelectMode })
             
             {/* Title */}
             <h3 className="text-3xl font-bold text-white mb-4 text-center group-hover:text-red-400 transition-colors">
-              DIFÍCIL
+              HARD
             </h3>
             
             {/* Description */}
             <p className="text-gray-300 mb-6 text-center leading-relaxed">
-              Apenas para mestres! 6 cores, alta velocidade e recompensas épicas.
+              For masters only! 6 colors, high speed and epic rewards.
             </p>
             
             {/* Features */}
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-3 text-red-400">
                 <div className="w-2 h-2 bg-red-400 rounded-full"></div>
-                <span>6 cores diferentes</span>
+                <span>6 different colors</span>
               </div>
               <div className="flex items-center space-x-3 text-red-400">
                 <div className="w-2 h-2 bg-red-400 rounded-full"></div>
-                <span>Velocidade extrema</span>
+                <span>Speed extrema</span>
               </div>
               <div className="flex items-center space-x-3 text-red-400">
                 <div className="w-2 h-2 bg-red-400 rounded-full"></div>
-                <span>Pontuação 2.5x</span>
+                <span>2.5x score</span>
               </div>
             </div>
           </div>
@@ -243,7 +243,7 @@ const GameModeSelect: React.FC<GameModeSelectProps> = ({ onBack, onSelectMode })
         <div className="inline-flex items-center space-x-2 bg-gray-900/50 backdrop-blur-sm rounded-full px-6 py-3 border border-gray-700/50">
           <span className="text-yellow-400 animate-pulse">💡</span>
           <p className="text-gray-300 text-sm font-medium tracking-wider">
-            Dica: Comece pelo modo Normal e evolua gradualmente!
+            Tip: Start with Normal mode and progress gradually!
           </p>
         </div>
       </div>

@@ -45,7 +45,7 @@ export const useAudio = () => {
     oscillator.start(audioContext.currentTime);
     oscillator.stop(audioContext.currentTime + duration / 1000);
   } catch (error) {
-    console.log('Audio não suportado neste dispositivo');
+    console.log('Audio is not supported on this device');
   }
 }, [initAudioContext]);
 

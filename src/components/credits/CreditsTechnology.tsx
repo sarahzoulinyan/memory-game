@@ -35,9 +35,9 @@ const CreditsTechnology: React.FC = () => {
           </div>
           <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-300">
             <li className="flex items-center"><span className="text-neon-pink mr-2">•</span> Design System Neon</li>
-            <li className="flex items-center"><span className="text-neon-purple mr-2">•</span> Animações CSS</li>
+            <li className="flex items-center"><span className="text-neon-purple mr-2">•</span> CSS animations</li>
             <li className="flex items-center"><span className="text-neon-blue mr-2">•</span> Responsivo</li>
-            <li className="flex items-center"><span className="text-neon-green mr-2">•</span> Acessível</li>
+            <li className="flex items-center"><span className="text-neon-green mr-2">•</span> Accessible</li>
             <li className="flex items-center"><span className="text-neon-orange mr-2">•</span> PWA Ready</li>
           </ul>
         </div>

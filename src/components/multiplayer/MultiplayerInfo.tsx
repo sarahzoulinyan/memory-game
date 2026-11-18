@@ -28,13 +28,13 @@ const MultiplayerInfo: React.FC<MultiplayerInfoProps> = ({
             <Crown className="w-4 h-4 text-yellow-400" />
           )}
         </div>
-        <p className="text-[0.7rem] sm:text-sm text-neon-blue font-medium">VOCÊ</p>
+        <p className="text-[0.7rem] sm:text-sm text-neon-blue font-medium">YOU</p>
         <p className="text-base sm:text-xl font-bold text-white break-words">{playerName}</p>
       </div>
 
       {/* Level */}
       <div>
-        <p className="text-xs sm:text-sm text-neon-purple font-medium mb-1">NÍVEL</p>
+        <p className="text-xs sm:text-sm text-neon-purple font-medium mb-1">LEVEL</p>
         <p className="text-lg sm:text-2xl font-extrabold text-white">{room.level}</p>
       </div>
 
@@ -46,7 +46,7 @@ const MultiplayerInfo: React.FC<MultiplayerInfoProps> = ({
             <Crown className="w-4 h-4 text-yellow-400" />
           )}
         </div>
-        <p className="text-[0.7rem] sm:text-sm text-neon-orange font-medium">OPONENTE</p>
+        <p className="text-[0.7rem] sm:text-sm text-neon-orange font-medium">OPPONENT</p>
         <p className="text-base sm:text-xl font-bold text-white break-words">
           {currentOpponent || '...'}
         </p>

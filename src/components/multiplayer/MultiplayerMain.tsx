@@ -53,14 +53,14 @@ const MultiplayerMain: React.FC<MultiplayerMainProps> = ({
     try {
       await createRoom(playerName);
       toast({
-        title: "Sala criada!",
-        description: "Aguardando outro jogador entrar...",
+        title: "Room created!",
+        description: "Waiting for another player to join...",
         duration: 3000,
       });
     } catch (error) {
       toast({
-        title: "Erro ao criar sala",
-        description: "Tente novamente em alguns instantes.",
+        title: "Could not create room",
+        description: "Please try again in a moment.",
         variant: "destructive",
         duration: 3000,
       });
@@ -76,14 +76,14 @@ const MultiplayerMain: React.FC<MultiplayerMainProps> = ({
     try {
       await joinRoom(roomId, pendingPlayerName);
       toast({
-        title: "Entrando na sala...",
-        description: "O jogo começará em instantes!",
+        title: "Joining room...",
+        description: "The game will start shortly!",
         duration: 3000,
       });
     } catch (error) {
       toast({
-        title: "Erro ao entrar na sala",
-        description: "A sala pode estar cheia ou não existir mais.",
+        title: "Could not join room",
+        description: "The room may be full or no longer exist.",
         variant: "destructive",
         duration: 3000,
       });
@@ -105,7 +105,7 @@ const MultiplayerMain: React.FC<MultiplayerMainProps> = ({
               .delete()
               .eq('id', gameState.room!.id);
           } catch (error) {
-            console.error('Erro ao deletar sala:', error);
+            console.error('Error deleting room:', error);
           }
         };
         deleteRoom();

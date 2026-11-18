@@ -21,23 +21,23 @@ const GameStatus: React.FC<GameStatusProps> = ({
       {gameState === 'showing' && (
         <div>
           <p className="text-base sm:text-xl text-neon-green animate-pulse">
-            Memorize a sequência...
+            Memorize the sequence...
           </p>
           {((gameMode === 'speed' && level > 2) || (gameMode === 'hard' && level > 3)) && (
             <p className={`text-xs sm:text-sm ${modeInfo.color} mt-1`}>
-              {gameMode === 'speed' ? '⚡ VELOCIDADE EXTREMA! ⚡' : '💀 MODO DIFÍCIL! 💀'}
+              {gameMode === 'speed' ? '⚡ SPEED EXTREMA! ⚡' : '💀 MODO HARD! 💀'}
             </p>
           )}
         </div>
       )}
       {gameState === 'waiting' && (
         <p className="text-base sm:text-xl text-neon-blue animate-pulse">
-          Sua vez! Repita a sequência
+          Your turn! Repeat the sequence
         </p>
       )}
       {gameState === 'paused' && (
         <p className="text-base sm:text-xl text-yellow-400">
-          Jogo pausado
+          Game paused
         </p>
       )}
     </div>

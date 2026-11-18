@@ -12,7 +12,7 @@ const CreditsDeveloper: React.FC = () => {
         </h3>
         <p className="text-neon-purple font-bold text-xl sm:text-2xl mb-6">Pablo Gomes</p>
         <p className="text-gray-300 mb-8 text-base sm:text-lg max-w-md mx-auto">
-          Desenvolvedor apaixonado por criar experiências digitais incríveis
+          Developer passionate about creating amazing digital experiences
         </p>
 
         <CreditsSocialLinks />

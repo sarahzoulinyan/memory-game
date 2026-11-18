@@ -71,14 +71,14 @@ const Index = () => {
       setHighScore(score);
       localStorage.setItem('neonMemoryHighScore', score.toString());
       toast({
-        title: "🎉 Novo recorde!",
-        description: `Parabéns! Você fez ${score} pontos!`,
+        title: "🎉 New high score!",
+        description: `Congratulations! You scored ${score} points!`,
         duration: 3000,
       });
     } else if (score > 0) {
       toast({
-        title: "Bom jogo!",
-        description: `Você fez ${score} pontos. Continue praticando!`,
+        title: "Good game!",
+        description: `You scored ${score} points. Keep practicing!`,
         duration: 3000,
       });
     }
@@ -91,8 +91,8 @@ const Index = () => {
     localStorage.setItem('neonMemorySoundEnabled', newSoundEnabled.toString());
     
     toast({
-      title: newSoundEnabled ? "🔊 Som ativado" : "🔇 Som desativado",
-      description: newSoundEnabled ? "Os sons do jogo estão ligados" : "Os sons do jogo estão desligados",
+      title: newSoundEnabled ? "🔊 Sound on" : "🔇 Sound off",
+      description: newSoundEnabled ? "Game sounds are on" : "Game sounds are off",
       duration: 2000,
     });
   };
@@ -101,8 +101,8 @@ const Index = () => {
     setHighScore(0);
     localStorage.removeItem('neonMemoryHighScore');
     toast({
-      title: "🔄 Recorde resetado",
-      description: "Seu recorde foi apagado. Hora de um novo desafio!",
+      title: "🔄 High score reset",
+      description: "Your high score was cleared. Time for a new challenge!",
       duration: 3000,
     });
   };

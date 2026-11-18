@@ -25,8 +25,8 @@ const WaitingRoom: React.FC<WaitingRoomProps> = ({
     if (room.code) {
       navigator.clipboard.writeText(room.code);
       toast({
-        title: "Código copiado!",
-        description: "O código da sala foi copiado para a área de transferência.",
+        title: "Code copied!",
+        description: "The room code was copied to your clipboard.",
         duration: 2000,
       });
     }
@@ -39,7 +39,7 @@ const WaitingRoom: React.FC<WaitingRoomProps> = ({
           <div className="flex items-center justify-center gap-2 mb-6">
             <Users className="w-8 h-8 text-primary" />
             <h1 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text">
-              Sala Criada!
+              Room Created!
             </h1>
           </div>
         </div>
@@ -48,17 +48,17 @@ const WaitingRoom: React.FC<WaitingRoomProps> = ({
           <CardHeader className="text-center">
             <CardTitle className="text-xl text-foreground flex items-center justify-center gap-2">
               <Loader2 className="w-5 h-5 animate-spin text-primary" />
-              Aguardando jogador...
+              Waiting for a player...
             </CardTitle>
             <CardDescription>
-              Compartilhe o código abaixo com seu amigo
+              Share the code below with your friend
             </CardDescription>
           </CardHeader>
           
           <CardContent className="space-y-6">
             {room.code && (
               <div className="text-center space-y-3">
-                <p className="text-sm text-muted-foreground">Código da Sala:</p>
+                <p className="text-sm text-muted-foreground">Room Code:</p>
                 <div 
                   className="bg-primary/10 border border-primary/30 rounded-lg p-4 cursor-pointer hover:bg-primary/20 transition-colors"
                   onClick={copyRoomCode}
@@ -68,7 +68,7 @@ const WaitingRoom: React.FC<WaitingRoomProps> = ({
                   </div>
                   <div className="flex items-center justify-center gap-1 mt-2 text-xs text-muted-foreground">
                     <Copy className="w-3 h-3" />
-                    Clique para copiar
+                    Click to copy
                   </div>
                 </div>
               </div>
@@ -76,24 +76,24 @@ const WaitingRoom: React.FC<WaitingRoomProps> = ({
 
             <div className="space-y-3">
               <div className="bg-secondary/50 rounded-lg p-4">
-                <h3 className="font-semibold text-sm text-foreground mb-2">Jogadores na sala:</h3>
+                <h3 className="font-semibold text-sm text-foreground mb-2">Players in the room:</h3>
                 <div className="space-y-2">
                   <div className="flex items-center justify-between">
                     <span className="text-sm">
                       🎮 {room.player1}
-                      {isPlayer1 && <span className="text-primary ml-1">(você)</span>}
+                      {isPlayer1 && <span className="text-primary ml-1">(you)</span>}
                     </span>
                     <Badge variant="secondary" className="bg-green-500/20 text-green-400 border-green-500/30">
-                      Conectado
+                      Connected
                     </Badge>
                   </div>
                   
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-muted-foreground">
-                      🎮 Aguardando...
+                      🎮 Waiting...
                     </span>
                     <Badge variant="outline" className="border-orange-500/30 text-orange-400">
-                      Esperando
+                      Waiting
                     </Badge>
                   </div>
                 </div>
@@ -106,7 +106,7 @@ const WaitingRoom: React.FC<WaitingRoomProps> = ({
               className="w-full border-primary/30 hover:bg-primary/10 transition-colors"
             >
               <ArrowLeft className="w-4 h-4 mr-2" />
-              Cancelar e Voltar
+              Cancel and Go Back
             </Button>
           </CardContent>
         </Card>

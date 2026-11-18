@@ -46,7 +46,7 @@ const MultiplayerGame: React.FC<MultiplayerGameProps> = ({
   useEffect(() => {
     const currentLength = gameState.gameSequence.length;
 
-    // Corrige para todos os jogadores verem a sequência no nível 1
+    // Corrige para todos os players verem a sequência no nível 1
     const isFirstShow = lastSequenceLength === 0 && currentLength === 1 && gameState.room?.level === 1;
 
     if ((currentLength > 0 && currentLength !== lastSequenceLength && !isShowingSequence) || isFirstShow) {
@@ -119,7 +119,7 @@ const MultiplayerGame: React.FC<MultiplayerGameProps> = ({
           playErrorSound();
           setTimeout(() => playGameOverSound(), 300);
         }
-        onEndGame(currentOpponent || 'Oponente');
+        onEndGame(currentOpponent || 'Opponent');
       }, 500);
     }
   };
@@ -138,23 +138,23 @@ const MultiplayerGame: React.FC<MultiplayerGameProps> = ({
             <div>
               <h2 className="text-3xl font-bold mb-2">
                 {isWinner ? (
-                  <span className="text-green-400">Vitória!</span>
+                  <span className="text-green-400">Victory!</span>
                 ) : (
-                  <span className="text-red-400">Derrota</span>
+                  <span className="text-red-400">Defeat</span>
                 )}
               </h2>
               <p className="text-muted-foreground">
                 {isWinner 
-                  ? `Parabéns! Você venceu ${currentOpponent}!`
-                  : `${gameState.winner} venceu esta partida!`
+                  ? `Congratulations! You defeated ${currentOpponent}!`
+                  : `${gameState.winner} won this game!`
                 }
               </p>
             </div>
 
             <div className="bg-secondary/50 rounded-lg p-4">
-              <p className="text-sm text-muted-foreground mb-2">Estatísticas da partida:</p>
+              <p className="text-sm text-muted-foreground mb-2">Game statistics:</p>
               <p className="text-lg">
-                <span className="text-primary font-semibold">Nível alcançado:</span> {gameState.room?.level || 1}
+                <span className="text-primary font-semibold">Level reached:</span> {gameState.room?.level || 1}
               </p>
             </div>
 
@@ -164,7 +164,7 @@ const MultiplayerGame: React.FC<MultiplayerGameProps> = ({
               size="lg"
             >
               <ArrowLeft className="w-4 h-4 mr-2" />
-              Voltar ao Menu
+              Back to Menu
             </Button>
           </CardContent>
         </Card>

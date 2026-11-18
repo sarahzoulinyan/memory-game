@@ -11,20 +11,20 @@ const CreditsFeatures: React.FC = () => {
           <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-r from-neon-green to-neon-blue flex items-center justify-center">
             <Heart className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
           </div>
-          <h3 className="text-lg sm:text-xl font-bold text-white">Características</h3>
+          <h3 className="text-lg sm:text-xl font-bold text-white">Features</h3>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 text-sm sm:text-base text-gray-300">
           <ul className="space-y-2 sm:space-y-3">
             <li className="flex items-center">✨ <span className="ml-2">Interface moderna e intuitiva</span></li>
             <li className="flex items-center">🎵 <span className="ml-2">Sons sintetizados em tempo real</span></li>
             <li className="flex items-center">📱 <span className="ml-2">Totalmente responsivo</span></li>
-            <li className="flex items-center">🎮 <span className="ml-2">3 modos de jogo únicos</span></li>
+            <li className="flex items-center">🎮 <span className="ml-2">3 unique game modes</span></li>
           </ul>
           <ul className="space-y-2 sm:space-y-3">
-            <li className="flex items-center">⚡ <span className="ml-2">Carregamento ultrarrápido</span></li>
-            <li className="flex items-center">🎯 <span className="ml-2">Sistema de pontuação</span></li>
+            <li className="flex items-center">⚡ <span className="ml-2">Ultra-fast loading</span></li>
+            <li className="flex items-center">🎯 <span className="ml-2">Scoring system</span></li>
             <li className="flex items-center">❤️ <span className="ml-2">Sistema de vidas</span></li>
-            <li className="flex items-center">🏆 <span className="ml-2">Recordes salvos localmente</span></li>
+            <li className="flex items-center">🏆 <span className="ml-2">High Scores salvos localmente</span></li>
           </ul>
         </div>
       </div>

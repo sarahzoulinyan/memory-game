@@ -46,7 +46,7 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({
           <div className="p-2 rounded-full bg-gray-800/80 backdrop-blur-sm border border-gray-700 group-hover:border-purple-500/50 group-hover:bg-purple-500/10 transition-all duration-300">
             <ArrowLeft className="w-5 h-5 sm:w-6 sm:h-6 group-hover:scale-110 transition-transform" />
           </div>
-          <span className="text-sm sm:text-base font-medium tracking-wider">VOLTAR</span>
+          <span className="text-sm sm:text-base font-medium tracking-wider">BACK</span>
         </button>
       </div>
 
@@ -57,11 +57,11 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({
         </div>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-3 md:mb-4">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 animate-shine">
-            CONFIGURAÇÕES
+            SETTINGS
           </span>
         </h1>
         <p className="text-sm sm:text-base md:text-lg text-gray-300 font-light tracking-wider animate-pulse">
-          Personalize sua experiência de jogo
+          Customize your game experience
         </p>
       </div>
 
@@ -87,9 +87,9 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({
                 )}
               </div>
               <div>
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-1">Sons do jogo</h3>
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-1">Game sounds</h3>
                 <p className="text-sm sm:text-base text-gray-400">
-                  {soundEnabled ? 'Sons ativados' : 'Sons desativados'}
+                  {soundEnabled ? 'Sounds on' : 'Sounds off'}
                 </p>
               </div>
             </div>
@@ -120,9 +120,9 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({
                 <span className="text-white text-lg sm:text-xl font-bold">#</span>
               </div>
               <div>
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-1">Recorde</h3>
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-1">High Score</h3>
                 <p className="text-sm sm:text-base text-gray-400">
-                  Sua melhor pontuação: <span className="text-purple-300 font-semibold">{highScore}</span>
+                  Your best score: <span className="text-purple-300 font-semibold">{highScore}</span>
                 </p>
               </div>
             </div>
@@ -131,7 +131,7 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({
               className="group/button flex items-center space-x-2 py-3 px-4 sm:px-6 rounded-xl text-sm sm:text-base font-medium text-red-400 hover:text-red-300 bg-red-400/10 hover:bg-red-400/20 border border-red-400/30 hover:border-red-400/50 transition-all duration-300 hover:scale-105"
             >
               <RotateCcw className="w-4 h-4 sm:w-5 sm:h-5 group-hover/button:rotate-180 transition-transform duration-500" />
-              <span>Resetar</span>
+              <span>Reset</span>
             </button>
           </div>
         </div>
@@ -147,10 +147,10 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({
               <Smartphone className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
             </div>
             <div>
-              <h3 className="text-lg sm:text-xl font-bold text-white mb-3">Compatibilidade</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-3">Compatibility</h3>
               <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
-                Este jogo funciona perfeitamente em celulares, tablets e computadores.
-                Otimizado para todos os tamanhos de tela com design responsivo!
+                This game works perfectly on phones, tablets and computers.
+                Optimized for every screen size with responsive design!
               </p>
             </div>
           </div>
@@ -167,12 +167,12 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({
           <div className="relative text-center">
             <h3 className="text-xl sm:text-2xl font-bold mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
-                💡 DICA
+                💡 TIP
               </span>
             </h3>
             <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
-              Use fones de ouvido para uma experiência mais imersiva com os sons do jogo!
-              A qualidade do áudio pode fazer toda a diferença na sua performance.
+              Use headphones for a more immersive experience with the game sounds!
+              Audio quality can make a real difference in your performance.
             </p>
           </div>
         </div>

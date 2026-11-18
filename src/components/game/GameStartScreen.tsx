@@ -20,26 +20,26 @@ const GameStartScreen: React.FC<GameStartScreenProps> = ({
         <div className="flex items-center justify-center mb-4">
           <modeInfo.icon className={`w-8 h-8 ${modeInfo.color} mr-2`} />
           <h2 className="text-2xl sm:text-3xl font-bold text-white">
-            Modo {modeInfo.name}
+            {modeInfo.name} Mode
           </h2>
         </div>
         <p className="text-gray-300 mb-6 text-sm sm:text-base">
           {gameMode === 'speed' 
-            ? 'Sequências MUITO mais rápidas! Tempo reduzido drasticamente!' 
+            ? 'MUCH faster sequences! Dramatically reduced timing!' 
             : gameMode === 'hard'
-            ? '6 cores diferentes! Sequências mais rápidas e pontuação extra!'
-            : 'Memorize a sequência de cores e repita!'
+            ? '6 different colors! Faster sequences and bonus points!'
+            : 'Memorize the color sequence and repeat it!'
           }
         </p>
         {gameMode !== 'normal' && (
           <p className={`${modeInfo.color} text-xs sm:text-sm mb-4`}>
-            {gameMode === 'speed' && '⚡ Pontuação dupla • ⚡ Velocidade extrema'}
-            {gameMode === 'hard' && '💀 6 cores • 💀 Pontuação 2.5x • 💀 Velocidade alta'}
+            {gameMode === 'speed' && '⚡ Double score • ⚡ Extreme speed'}
+            {gameMode === 'hard' && '💀 6 colors • 💀 2.5x score • 💀 High speed'}
           </p>
         )}
       </div>
       <button onClick={onStartGame} className="neon-button text-lg sm:text-xl px-6 sm:px-8 py-3 sm:py-4">
-        COMEÇAR JOGO
+        START GAME
       </button>
     </div>
   );
